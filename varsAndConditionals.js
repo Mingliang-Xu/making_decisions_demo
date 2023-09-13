@@ -24,9 +24,24 @@ if(johnSnowHealth<=jamieLannisterAttack){
 }
 
 johnSnowDefense += 25;
+
+// second attack from jamie
+
 if(johnSnowHealth<=(jamieLannisterAttack-johnSnowDefense)){
     console.log("JS is dead")
 }else{
     johnSnowHealth -= (jamieLannisterAttack - johnSnowDefense)
     console.log(`JS's health is down to ${johnSnowHealth}`)
+}
+let isDead = false;
+
+//Jamie uses a gun at Jon 3 times as he runs into the forest
+// there is  50% chance, per gun usage, that Jon is dead.
+
+for(let i = 1; i<=3; i++){
+    isDead = Math.random()>0.5;
+    if(isDead === true){
+        console.log(`John has died after ${i}rounds`)
+        break
+    }
 }
