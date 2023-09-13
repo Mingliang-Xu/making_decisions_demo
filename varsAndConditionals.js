@@ -22,3 +22,11 @@ if(johnSnowHealth<=jamieLannisterAttack){
     johnSnowHealth = johnSnowHealth-jamieLannisterAttack
     console.log(`JS health is down to ${johnSnowHealth}`)
 }
+
+johnSnowDefense += 25;
+if(johnSnowHealth<=(jamieLannisterAttack-johnSnowDefense)){
+    console.log("JS is dead")
+}else{
+    johnSnowHealth -= (jamieLannisterAttack - johnSnowDefense)
+    console.log(`JS's health is down to ${johnSnowHealth}`)
+}
