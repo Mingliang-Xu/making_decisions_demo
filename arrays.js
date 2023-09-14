@@ -10,7 +10,7 @@ let pokemon = [];
 
 backpack.push("oreos");
 backpack.push("oreos");
-console.log("after buying oreos, this is our backpack: ")
+console.log("after buying oreos, this is our backpack: ");
 console.log(pokemon);
 
 backpack.push("pokedex");
@@ -32,7 +32,7 @@ console.log(backpack);
 
 let newPokemon = "charizard";
 pokemon.push(newPokemon);
-console.log("after catching charizard, our pokemon are now: ")
+console.log("after catching charizard, our pokemon are now: ");
 console.log(pokemon);
 
 console.log("here is my pikachu!");
@@ -44,8 +44,35 @@ console.log("here are your cloned pidgeys:");
 console.log(clonePidgey);
 console.log(pokemon);
 backpack.unshift("jynx statute");
-console.log("backpack after adding status: ")
+console.log("backpack after adding status: ");
 console.log(backpack);
+
+backpack.shift();
+
+console.log("backpack after getting rid of the statute:")
+console.log(backpack);
+
+let favePokemon = "butterfree";
+pokemon.push(favePokemon);
+backpack.unshift();
+let lunch = pokemon.splice(3,1,favePokemon);
+console.log("here is my backpack after catching butterfree: ");
+console.log(pokemon);
+console.log("and here are my pokemon: ");
+console.log(backpack);
+console.log("here is my lunch: ");
+console.log(lunch);
+
+for (i = 0 ; i < pokemon.length; i++){
+    if (pokemon[i] === "pidgey"){
+    pokemon[i] = "pidgeotto";
+    }
+}
+console.log("after the evolution event, my pokemon are now: ")
+console.log(pokemon);
+
+
+
 
 
 
